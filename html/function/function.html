@@ -8,16 +8,34 @@
   <body>
     <div class="alert-box" id="alert">
       알림창임
-      <button onclick="알림창닫기()">닫기</button>
+      <button onclick="알림창열기('block');">닫기</button>
     </div>
-    <button onclick="알림창열기()">버튼</button>
+    <button onclick="알림창열기('none');">버튼</button>
     <script>
-      function 알림창열기() {
-        document.getElementById("alert").style.display = "block";
+      function 알림창열기(구멍) {
+        document.getElementById("alert").style.display = 구멍;
       }
-      function 알림창닫기() {
-        document.getElementById("alert").style.display = "none";
+      function 알림창열기(구멍, 구멍2) {
+        document.getElementById(구멍2).style.display = 구멍;
       }
+
+      function plus(구멍) {
+        2 + 구멍;
+      }
+      plus(1);
+
+      //   function plus() {
+      //     2 + 1;
+      //   }
+      //   function plus2() {
+      //     2 + 2;
+      //   }
+      //   function plus3() {
+      //     2 + 3;
+      //   }
+      //   function 알림창닫기() {
+      //     document.getElementById("alert").style.display = "none";
+      //   }
     </script>
   </body>
 </html>
